@@ -1,0 +1,181 @@
+<app-nav-bar class="_no_print"></app-nav-bar>
+<div class="wrapper" id="_bg_main">
+  <div class="main-panel">
+    <div class="main-content">
+      <div class="container-fluid page-body-wrapper">
+        <div class="">
+          <div class="content-wrapper">
+            <div>
+              <div class="logo text-center">
+                <img
+                  src="/assets/images/mundiapolis.png"
+                  height="128"
+                  alt="logo mundiapolis"
+                />
+              </div>
+              <br />
+              <table width="100%">
+                <tr>
+                  <td width="20%"><div id="rec1"></div></td>
+                  <td width="60%">
+                    <div id="rec2"><h3>FACTURATION</h3></div>
+                  </td>
+                  <td width="20%"><div id="rec3"></div></td>
+                </tr>
+              </table>
+              <table width="100%">
+                <tr>
+                  <td></td>
+                  <td colspan="2">
+                    <div class="radius" id="name">
+                      <b> {{ customer?.name | titlecase }} </b><i> </i>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="radius hauteur" id="dat">
+                      <b>DATE:</b><br />
+                      {{ bill.billingDate | date : "dd/MM/yyyy, hh:mm a" }}
+                    </div>
+                  </td>
+                  <td>
+                    <div class="radius hauteur" id="numf">
+                      <b>FACTURE <br />N° {{ bill.id }} </b>
+                    </div>
+                  </td>
+                  <td colspan="2">
+                    <div class="radius hauteur" id="cont">
+                      CONTACT : <i>+212617661204</i> <br /><i
+                        >Mr Mamouaka Mayombo L.</i
+                      >
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table
+                border="2"
+                width="100%"
+                style="border-color: rgb(172, 165, 165)"
+              >
+                <thead class="text-center border">
+                  <th width="60%"><i>Désignation</i></th>
+                  <th><i>Qté</i></th>
+                  <th width="13%"><i>PU HT</i></th>
+                  <th width="20%"><i>Prix Total HT</i></th>
+                </thead>
+                <tr class="empty_row border">
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                  <td>..</td>
+                </tr>
+
+                <tr class="text-center border" *ngFor="let p of products">
+                  <td class="text-left" width="60%">{{ p.product_name }}</td>
+                  <td>{{ p.quantity }}</td>
+                  <td width="13%">{{ p.price }}</td>
+                  <td class="text-right" width="20%">
+                    {{ p.price * p.quantity }}
+                  </td>
+                </tr>
+
+                <tr class="empty_row empty border">
+                  <td width="60%">..</td>
+                  <td width="5%">..</td>
+                  <td>..</td>
+                  <td width="20%">..</td>
+                </tr>
+                <tr class="text-center border">
+                  <td class="empty_row"></td>
+                  <td colspan="2">Total HT</td>
+                  <td class="text-right">{{ tht }}</td>
+                </tr>
+                <tr class="text-center border">
+                  <td class=""></td>
+                  <td></td>
+                  <td>TVA 20%</td>
+                  <td class="text-right">{{ tva }}</td>
+                </tr>
+                <tr class="text-center border">
+                  <td class="empty_row"></td>
+                  <td colspan="2">Total TTC</td>
+                  <td class="text-right">{{ ttc }}</td>
+                </tr>
+              </table>
+              <table class="tablef" width="100%">
+                <tr>
+                  <td>
+                    <p>
+                      <i>Arrêté la présente facture à la somme de : </i
+                      ><i id="letter"> {{ montant_en_lettre }} </i>
+                      <b><i>Dirhams TTC</i></b>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <div class="text-center">
+                <a id="a_imp" href="javascript:print()" (click)="inscrire()"
+                  >Imprimer</a
+                >
+              </div>
+              <br />
+              <div>
+                <table classe="tablef" width="100%">
+                  <tr>
+                    <td>
+                      <p id="p"></p>
+                      <h4 id="bleu">
+                        <i
+                          >Le règlement des produits se fait en espèces, par
+                          Chèque <br />
+                          Non Endossable, ou par Virement Bancaire au compte
+                          suivant :</i
+                        >
+                      </h4>
+                      <h4 id="vert">
+                        <i>Société : UNIVERSITE MUNDIAPOLIS DE CASABLANCA</i>
+                      </h4>
+                      <u>Numéro de compte </u>: 007 780 000 227 100 000 152 347
+                      <br />
+                      SWIFT : BCMAMAMC <br />
+                      Banque : Attijariwafabank
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <footer id="footer">
+                <footer>
+                  <table cellspacing="0" width="100%">
+                    <thead id="tr1">
+                      <th><div></div></th>
+                    </thead>
+                    <tr id="tr2">
+                      <td>
+                        <div>
+                          <p>
+                            Université Mundiapolis : Aéropôle Mohamed V - BP
+                            128, 26202,Nouaceur - Casablanca, Maroc <br />
+                            <b>Autorisation du M.E.S. N° UP5/12</b>
+                            - <b>Patente: </b>32090046 - <b>IF</b>: 2263413 -
+                            <b>R.C</b>: 185765 <b>- CNSS</b>: 7860704 <br />
+                            <b>ICE</b>: 001594224000090 <b>- Tél</b>: 05 29 01
+                            37 00 <b>- FAX</b>: 05 22 53 86 26 <b>- E-mail</b>:
+                            contact@mundiapolis.ma
+                            <b>- WWW.MUNDIAPOLIS.MA</b>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </footer>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

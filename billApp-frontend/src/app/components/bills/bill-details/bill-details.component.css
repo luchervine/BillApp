@@ -1,0 +1,129 @@
+@keyframes col {
+  0% {
+    background-color: #e9b117;
+  }
+  50% {
+    background-color: #499253;
+  }
+  100% {
+    background-color: #e9b117;
+  }
+}
+/*###########En-Tête#########*/
+#rec2 {
+  background: #0073c0;
+  color: white;
+  text-align: center;
+  transform: skew(-40deg);
+}
+#rec1 {
+  border-top: 21px solid #accc42;
+  border-right: 18px solid transparent;
+  height: 0;
+}
+#rec3 {
+  border-bottom: 21px solid #accc42;
+  border-left: 18px solid transparent;
+  height: 0;
+}
+h3 {
+  transform: skew(40deg);
+}
+li {
+  list-style: none;
+  display: inline;
+  padding: 0 1%;
+}
+li:nth-child(3) > img {
+  margin-top: 1%;
+}
+/*##########Content#########*/
+.radius {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2%;
+}
+.hauteur {
+  height: 60px;
+}
+#dat {
+  margin: 0 30% 0 0;
+}
+#bleu {
+  color: #229;
+}
+#vert {
+  color: green;
+}
+u {
+  color: red;
+}
+.empty_row {
+  color: white;
+  border-color: rgba(184, 184, 184, 0.233) transparent transparent transparent;
+}
+.empty {
+  border-color: black;
+}
+/*##########Footer########*/
+#tr1 {
+  background: #accc42;
+  width: 90%;
+  margin: 0;
+  border: 2px solid #00cc42;
+}
+#tr2 {
+  background: #0073c0;
+  width: 90%;
+  color: white;
+  text-align: center;
+  font-size: small;
+  margin: 0;
+}
+#tablef {
+  text-align: left;
+}
+#tr2 > p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/*#######Impression#########*/
+#a_imp {
+  position: absolute;
+  z-index: 1;
+  align-self: center;
+  color: white;
+  text-decoration: none;
+  background: #8f1b1b;
+  padding: 10px;
+  border-radius: 10px;
+  animation-name: col;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@media print {
+  html,
+  body {
+    width: 21cm;
+    height: 29.7cm;
+    /* change the margins as you want them to be. */
+  }
+  #footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  #prix {
+    border-style: none;
+  }
+  #a_imp {
+    visibility: hidden;
+  }
+  #_bg_main {
+    background: white;
+  }
+  ._no_print {
+    visibility: hidden;
+    display: none;
+  }
+}

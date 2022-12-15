@@ -1,0 +1,50 @@
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <span class="float-start"
+            ><h3>{{ customer?.name | titlecase }}</h3></span
+          >
+          <span class="float-end"
+            ><h3>{{ customer?.email }}</h3></span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover center" *ngIf="products">
+              <thead>
+                <tr>
+                  <th>Designation</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let b of products">
+                  <td>{{ b.product_name }}</td>
+                  <td>{{ b.quantity }}</td>
+                  <td>{{ b.price }}</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td *ngIf="products.length > 1">
+                    <button class="btn btn-primary" (click)="gotoBilling()">
+                      Billing
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
