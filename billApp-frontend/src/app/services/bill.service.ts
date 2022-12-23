@@ -24,4 +24,11 @@ export class BillService {
       headers: headers,
     });
   }
+
+  add(bill: Bill) {
+    const headers = { 'Content-type': 'application/json' };
+    return this.http.post<Bill>(this.apiUrl + 'BILLING-SERVICE/fullbill/', {
+      headers: headers,
+    });
+  }
 }

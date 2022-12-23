@@ -5,6 +5,7 @@ import { Bill } from 'src/app/models/bill';
 import { Customer } from 'src/app/models/customer';
 import { ProductItem } from 'src/app/models/productItem';
 import { BillService } from 'src/app/services/bill.service';
+import { CustomerService } from 'src/app/services/customer.service';
 
 @Component({
   selector: 'app-bills',
@@ -24,6 +25,7 @@ export class BillsComponent implements OnInit {
   constructor(
     private securityService: SecurityService,
     private billService: BillService,
+    private customerService: CustomerService,
     private route: ActivatedRoute,
     private router: Router
   ) {}
@@ -31,6 +33,7 @@ export class BillsComponent implements OnInit {
   ngOnInit(): void {
     this.customer_id = this.route.snapshot.params['customer_id'];
     console.log('paramID : ', this.customer_id);
+    this.getCustomer();
     this.getBills();
   }
 
@@ -40,7 +43,7 @@ export class BillsComponent implements OnInit {
         response.forEach((b: Bill) => {
           if (b.customer_id == this.customer_id) {
             this.products = b.productItems;
-            this.customer = b.customer;
+            //this.customer = b.customer;
           }
         });
         console.log('response : ', response);
@@ -50,6 +53,14 @@ export class BillsComponent implements OnInit {
         console.log('errgetBills : ', err);
       }
     );
+  }
+
+  getCustomer() {
+    this.customerService
+      .getById(this.customer_id)
+      .subscribe((resp: Customer) => {
+        this.customer = resp;
+      });
   }
 
   gotoBilling() {

@@ -14,6 +14,9 @@ import { BillsComponent } from './components/bills/bills.component';
 import { BillDetailsComponent } from './components/bills/bill-details/bill-details.component';
 import { NavBarComponent } from './components/layouts/nav-bar/nav-bar.component';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AddBillComponent } from './components/bills/add-bill/add-bill.component';
+import { FormsModule } from '@angular/forms';
 
 export function kcFactory(kcService: KeycloakService) {
   return () => {
@@ -38,8 +41,11 @@ export function kcFactory(kcService: KeycloakService) {
     BillsComponent,
     BillDetailsComponent,
     NavBarComponent,
+    ProfileComponent,
+    AddBillComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

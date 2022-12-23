@@ -64,6 +64,7 @@ public class BillingRestController {
     public Bill addBill(@RequestBody Bill bill, Principal principal){
         KeycloakAuthenticationToken authenticationToken = (KeycloakAuthenticationToken) principal;
         AccessToken token = authenticationToken.getAccount().getKeycloakSecurityContext().getToken();
+
         String username =  token.getPreferredUsername();
         return billRepository.save(bill);
     }

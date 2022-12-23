@@ -1,0 +1,50 @@
+<app-nav-bar></app-nav-bar>
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row" id="add_bill">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title mt-0">Ajouter une facture</h4>
+            <p class="card-category">Formulaire d'ajout d'une facture</p>
+          </div>
+          <div class="card-body">
+            <form class="example-form" (ngSubmit)="onSubmit(f_)" #f_="ngForm">
+              <div
+                class="form-group example-full-width text-center"
+                appearance="fill"
+              >
+                <label>Customers</label>
+                <select [(ngModel)]="selectedValue" name="customer">
+                  <option
+                    *ngFor="let c of customers"
+                    [value]="c"
+                    (click)="customerSelected(c)"
+                  >
+                    {{ c.name }}
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr" />
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" />
+              </div>
+
+              <button
+                type="submit"
+                class="col-md-6 text-center"
+                [disabled]="f_.invalid ? true : false"
+              >
+                Add
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
