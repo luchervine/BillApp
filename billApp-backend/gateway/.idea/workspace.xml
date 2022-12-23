@@ -2,44 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917c65fe-6fc7-477b-b796-dbfe1a883e45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../README.md.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../billing-service/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer-service/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../eureka-discovery/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../eureka-discovery/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../inventory-service/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/Capture d’écran (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/bill_client_parameters.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/bill_realm_users.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/config_dynamique.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/config_statique.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/create_bill_realm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/customer_config.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/product_config.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/properties_customer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/properties_gateway.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/properties_inventories.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../images/security_config_inventory.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../billing-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../billing-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../billing-service/src/main/java/com/mundiapolis/billingservice/web/BillingRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../billing-service/src/main/java/com/mundiapolis/billingservice/web/BillingRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../customer-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eureka-discovery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-discovery/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka-discovery/eureka-discovery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-discovery/eureka-discovery.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../inventory-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../billApp-frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../billApp-frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../billApp-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../billApp-frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../billApp-frontend/src/app/components/bills/bills.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../billApp-frontend/src/app/components/bills/bills.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../billApp-frontend/src/app/components/bills/bills.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../billApp-frontend/src/app/components/bills/bills.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../billApp-frontend/src/app/components/layouts/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../billApp-frontend/src/app/components/layouts/nav-bar/nav-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../billApp-frontend/src/app/components/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../billApp-frontend/src/app/components/profile/profile.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../billApp-frontend/src/app/services/bill.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../billApp-frontend/src/app/services/bill.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +84,7 @@
       <workItem from="1670978717689" duration="475000" />
       <workItem from="1670979315941" duration="13531000" />
       <workItem from="1671719896077" duration="373000" />
-      <workItem from="1671781935246" duration="1129000" />
+      <workItem from="1671781935246" duration="2012000" />
     </task>
     <servers />
   </component>
