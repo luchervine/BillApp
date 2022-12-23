@@ -108,5 +108,10 @@
       <h6>Factory kcFactory (FrontEnd)</h6>
       <img src="./images/factory.png" alt="factory" />
     </div>
+    <div>
+      <h5>Fonctionnalités Supplémentaires</h5>
+      <h6>Exemple de Facturation</h6>
+      <img src="./images/facture.png" alt="facture" />
+    </div>
   </body>
 </html>
