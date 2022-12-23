@@ -64,7 +64,7 @@
       <img src="./images/customer_rest_client.png" alt="customer_rest_client" />
       <h6>Feign ProductItemRestClient.java (Billing)</h6>
       <img
-        src="./images/productItem_rest_client.png"
+        src="./images/productitem_rest_client.png"
         alt="productItem_rest_client"
       />
       <h6>Controller BillingRestController.java (Billing)</h6>
