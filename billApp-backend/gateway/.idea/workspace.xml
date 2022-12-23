@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917c65fe-6fc7-477b-b796-dbfe1a883e45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../README.md.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../images/bill_entity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../images/billing_rest_controller1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../images/billing_rest_controller2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../images/billing_rest_controller3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../images/customer_rest_client.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../images/eureka_discovery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../images/productItem_entity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../images/productitem_rest_client.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../billing-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../billing-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../customer-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eureka-discovery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-discovery/.idea/workspace.xml" afterDir="false" />
